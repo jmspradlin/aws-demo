@@ -19,19 +19,19 @@ availability_zone = ["us-east-2a", "us-east-2b", "us-east-2c"]
 instance = {
   aws1 = {
     ami       = "ami-0cc87e5027adcdca8"
-    type      = "t2.large"
+    type      = "t2.nano"
     key_name  = "testKey"
     subnet_id = "0"
   }
   aws2 = {
     ami       = "ami-0cc87e5027adcdca8"
-    type      = "t2.large"
+    type      = "t2.nano"
     key_name  = "testKey"
     subnet_id = "1"
   }
   aws3 = {
     ami       = "ami-0cc87e5027adcdca8"
-    type      = "t2.large"
+    type      = "t2.nano"
     key_name  = "testKey"
     subnet_id = "2"
   }
