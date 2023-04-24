@@ -4,8 +4,7 @@ module "vpc" {
   name = "${var.env}-${var.vpc.name}"
   cidr = var.vpc.address_space
 
-  azs             =  var.availability_zone 
-  #public_subnets  = var.subnet.public
+  azs             =  var.availability_zone
   private_subnets = var.subnet.private
 
   enable_vpn_gateway     = false
