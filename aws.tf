@@ -34,7 +34,3 @@ module "aws_instance01" {
     module.network
   ]
 }
-
-output "subnets" {
-  value =  module.network.private_subnet_ids
-}
