@@ -15,8 +15,7 @@ module "network" {
 
 module "aws_instance01" {
   for_each = var.instance
-  source   = "terraform-aws-modules/ec2-instance/aws"
-  version  = ">= 4.3.0"
+  source  = "app.terraform.io/jeff-spradlin-org/ec2-instance/aws"
 
   name                   = each.key
   ami                    = each.value.ami
