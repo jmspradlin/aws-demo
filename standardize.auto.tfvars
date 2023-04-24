@@ -6,7 +6,7 @@ env        = "dev"
 #   department  = "Infrastructure"
 #   costCenter  = "IT"
 #   kickoff     = "true"
-}
+#}
 # AWS resources
 vpc = {
   name          = "lab02"
