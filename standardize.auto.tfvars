@@ -1,6 +1,6 @@
 # General resources
 env = "dev"
-aws_region ="us-east-1"
+aws_region ="us-east-2"
 tags = {
   environment = "Dev"
   source      = "Terraform"
@@ -10,13 +10,13 @@ tags = {
 }
 # AWS resources
 vpc = {
-  name          = "lab01"
-  address_space = "10.0.0.0/23"
+  name          = "lab02"
+  address_space = "10.0.2.0/24"
 }
 subnet = {
-  private = ["10.0.1.0/27", "10.0.1.32/27", "10.0.1.64/27"]
+  private = ["10.0.2.0/27", "10.0.2.32/27", "10.0.2.64/27"]
 }
-availability_zone = ["us-east-1a", "us-east-1b", "us-east-1c"]
+availability_zone = ["us-east-2a", "us-east-2b", "us-east-2c"]
 instance = {
   aws1 = {
     ami       = "ami-0cc87e5027adcdca8"
