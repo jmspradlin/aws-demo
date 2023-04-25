@@ -10,6 +10,7 @@ module "network" {
     department  = "Infrastructure"
     costCenter  = "IT"
     kickoff     = "true"
+    Billable    = "true"
   }
 }
 
@@ -26,6 +27,7 @@ module "instance" {
     department  = "Infrastructure"
     costCenter  = "IT"
     kickoff     = "true"
+    Billable    = "true"
   }
   depends_on = [
     module.network
