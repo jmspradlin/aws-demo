@@ -27,7 +27,7 @@ module "instance" {
     department  = "Infrastructure"
     costCenter  = "IT"
     kickoff     = "true"
-    Billable    = "true"
+    billable    = "true"
   }
   depends_on = [
     module.network
