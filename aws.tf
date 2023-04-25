@@ -13,15 +13,12 @@ module "network" {
   }
 }
 
-module "aws_instance01" {
-  for_each = var.instance
+module "instance" {
   source  = "app.terraform.io/jeff-spradlin-org/ec2-instance/aws"
+  version = "1.1.2"
 
-  name                   = each.key
-  ami                    = each.value.ami
-  instance_type          = each.value.type
-  monitoring             = true
-  subnet_id              = element(module.network.private_subnet_ids, each.value.subnet_id)
+  instance_count         = 4
+  subnet_id              = module.network.private_subnet_ids
   vpc_security_group_ids = [module.network.aws_security_group_id]
   tags = {
     environment = "Dev"
