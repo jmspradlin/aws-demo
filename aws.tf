@@ -10,7 +10,7 @@ module "network" {
     department  = "Infrastructure"
     costCenter  = "IT"
     kickoff     = "true"
-    Billable    = "true"
+    billable    = "true"
   }
 }
 
