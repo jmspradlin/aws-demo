@@ -2,11 +2,11 @@
 env = "dev"
 aws_region ="us-east-2"
 tags = {
-  environment = "Dev"
-  source      = "Terraform"
-  department  = "Infrastructure"
-  costCenter  = "IT"
-  kickoff     = "true"
+  fugetaboutit = "true"
+  foo      = "test"
+  department  = "None"
+  costCenter  = "true"
+  test     = "bar"
 }
 # AWS resources
 vpc = {
