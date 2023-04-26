@@ -23,7 +23,7 @@ module "instance" {
   subnet_id              = module.network.private_subnet_ids
   vpc_security_group_ids = [module.network.aws_security_group_id]
   tags = {
-    environment = "Dev"
+    environment = "Dev-Test"
     department  = "Infrastructure"
     costCenter  = "IT"
     kickoff     = "true"
