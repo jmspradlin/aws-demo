@@ -18,10 +18,11 @@ module "instance" {
   source  = "app.terraform.io/jeff-spradlin-org/ec2-instance/aws"
   version = "1.1.3"
 
-  instance_count         = 5
+  instance_count         = 2
   instance_name          = "lab-test"
   subnet_id              = module.network.private_subnet_ids
   vpc_security_group_ids = [module.network.aws_security_group_id]
+  
   tags = {
     environment = "Dev"
     department  = "Infrastructure"
@@ -31,4 +32,6 @@ module "instance" {
   depends_on = [
     module.network
   ]
+
+  instance_type = "t2.nano"
 }
