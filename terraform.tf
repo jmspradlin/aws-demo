@@ -3,7 +3,7 @@ terraform {
     organization = "jeff-spradlin-org"
 
     workspaces {
-      name = "aws-demo-standardize"
+      name = "aws-demo-api"
     }
   }
 

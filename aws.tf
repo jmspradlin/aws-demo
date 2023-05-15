@@ -6,7 +6,7 @@ module "network" {
   availability_zone = var.availability_zone
   private_subnets   = var.subnet.private
   tags = {
-    environment = "Dev"
+    environment = "API"
     department  = "Infrastructure"
     costCenter  = "IT"
     kickoff     = "true"
@@ -19,12 +19,12 @@ module "instance" {
   version = "1.1.3"
 
   instance_count         = 3
-  instance_name          = "lab-test"
+  instance_name          = "lab-test-api"
   subnet_id              = module.network.private_subnet_ids
   vpc_security_group_ids = [module.network.aws_security_group_id]
   
   tags = {
-    environment = "Dev"
+    environment = "API"
     department  = "Infrastructure"
     costCenter  = "IT"
     billable    = "true"
