@@ -3,7 +3,7 @@ name: azure-deploy
 on:
   push:
     branches:
-      - main
+      - standardize
 
 jobs:
   terraform:
