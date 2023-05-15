@@ -1,6 +1,6 @@
 module "network" {
-  source = "app.terraform.io/jeff-spradlin-org/network/aws"
-  env = var.env
+  source            = "app.terraform.io/jeff-spradlin-org/network/aws"
+  env               = var.env
   vpc_name          = var.vpc.name
   vpc_address_space = var.vpc.address_space
   availability_zone = var.availability_zone
@@ -22,7 +22,7 @@ module "instance" {
   instance_name          = "lab-test-api"
   subnet_id              = module.network.private_subnet_ids
   vpc_security_group_ids = [module.network.aws_security_group_id]
-  
+
   tags = {
     environment = "API"
     department  = "Infrastructure"

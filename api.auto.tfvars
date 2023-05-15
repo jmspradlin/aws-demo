@@ -1,5 +1,5 @@
 # General resources
-env        = "api"
+env = "api"
 
 
 # AWS resources
