@@ -3,7 +3,7 @@ name: "Terraform"
 on:
   push:
     branches:
-      - api
+      - api*
   pull_request:
     branches:
       - api
@@ -77,5 +77,5 @@ jobs:
         run: exit 1
 
       - name: Terraform Apply
-        if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+        if: github.ref == 'refs/heads/api' && github.event_name == 'push'
         run: terraform apply -var-file=api.auto.tfvars -auto-approve -input=false
