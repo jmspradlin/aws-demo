@@ -3,7 +3,7 @@ env = "api"
 
 
 # AWS resources
-aws_region = "us-east-2"
+aws_region = "us-east-1"
 ## Network
 vpc = {
   name          = "api-lab01"
