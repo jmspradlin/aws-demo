@@ -33,6 +33,6 @@ module "instance" {
     module.network
   ]
 
-  #instance_type = "t2.nano"
-  instance_type = "t2.large"
+  instance_type = "t2.nano"
+  #instance_type = "t2.large"
 }
