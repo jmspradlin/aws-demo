@@ -16,7 +16,7 @@ module "network" {
 
 module "instance" {
   source  = "app.terraform.io/jeff-spradlin-org/ec2-instance/aws"
-  version = "1.1.4"
+  version = "1.1.3"
 
   instance_count         = 4
   instance_name          = "lab-test-api"
